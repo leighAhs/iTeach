@@ -1,4 +1,5 @@
-// FOR PRICE RANGE BUTTON
+$(document).ready(function () {
+    // FOR PRICE RANGE BUTTON
 
 var button = $(".button-container input");
 
@@ -88,8 +89,8 @@ $("#about-link").on("click", function (e) {
     $("#search").prop("disabled", true);
 
     removeDynamicCSS();
-    loadContent("navigation/abt/about.html");
-    loadCSS("navigation/abt/about.css");
+    loadContent("main/navigation/abt/about.html");
+    loadCSS("main/navigation/abt/about.css");
 });
 
 $(document).ready(function () {
@@ -99,8 +100,8 @@ $(document).ready(function () {
         $("#search").prop("disabled", true);
 
         removeDynamicCSS();
-        loadContent("profile-content/profileContent.html");
-        loadCSS("profile-content/content.css");
+        loadContent("main/profile-content/profileContent.html");
+        loadCSS("main/profile-content/content.css");
     });
 });
 
@@ -113,7 +114,7 @@ $("#home-link").on("click", function (e) {
 
     removeDynamicCSS();
     loadCSS("style.css"); 
-    loadContent("main.html #main-content"); 
+    loadContent("main/index.html #main-content"); 
 });
 
 
@@ -129,4 +130,4 @@ $(document).ready(function () {
         $(".search").val('');
     });
 });
-
+});
