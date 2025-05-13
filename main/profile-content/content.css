@@ -48,7 +48,7 @@
     height: 30%;
     width: 100%;
     border-radius: 20px;
-    background-color: aliceblue;
+    background-color: transparent;
 
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
     height: 35%;
     width: 100%;
     border-radius: 20px;
-    background-color: aliceblue;
+    background-color: transparent;
 }
 
 .profile-info-content-container{
