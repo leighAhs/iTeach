@@ -114,7 +114,7 @@ $("#home-link").on("click", function (e) {
 
     removeDynamicCSS();
     loadCSS("style.css"); 
-    loadContent("main/index.html #main-content"); 
+    loadContent("index.html #main-content"); 
 });
 
 
