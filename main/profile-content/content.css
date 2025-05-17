@@ -57,13 +57,6 @@
     box-sizing: border-box;
 }
 
-.profile-bottom{
-    height: 35%;
-    width: 100%;
-    border-radius: 20px;
-    background-color: transparent;
-}
-
 .profile-info-content-container{
     height: 100%;
     width: 70%;
@@ -104,6 +97,20 @@
 
     padding: 0 35px;
     box-sizing: border-box;
+}
+
+.profile-bottom{
+    height: 35%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.first-bottom{
+    background-color: aqua;
+}
+.first-bottom-content{
+    background-color: blue;
 }
 
 /* FEEDBACK */
