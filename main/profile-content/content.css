@@ -1,3 +1,7 @@
+div{
+    font-family: 'Segoe UI', Calibri, sans-serif;
+}
+
 .main-content-container{
     width: 100%;
     height: 800px;
@@ -16,8 +20,8 @@
 
 /* PROFILE */
 .profile-container{
-    height: 70%;
-    width: 40%;
+    height: 60%;
+    width: 35%;
     border-radius: inherit;
     background-color: rgba(69, 68, 68, 0.3);
     
@@ -39,21 +43,6 @@
     align-items: center;
 
     padding: 20px 35px;
-    box-sizing: border-box;
-}
-
-.profile-mid{
-    font-size: 15px;
-    font-weight: bold;
-    height: 30%;
-    width: 100%;
-    border-radius: 20px;
-    background-color: transparent;
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 0 15px;
     box-sizing: border-box;
 }
 
@@ -99,19 +88,88 @@
     box-sizing: border-box;
 }
 
+.profile-mid{
+    font-size: 15px;
+    font-weight: bold;
+    height: 30%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.profile-mid p{
+    font-weight: bold;
+}
+
+.outside{
+    padding-left: 10px;
+}
+
 .profile-bottom{
     height: 35%;
     width: 100%;
     border-radius: 20px;
-    background-color: white;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.first-bottom{
-    background-color: aqua;
+.first-bottom {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 0 15px;
+    background-color: transparent;
+    margin-bottom: 25px;
 }
-.first-bottom-content{
-    background-color: blue;
+
+.subject-top {
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0;
+    font-size: 13px;
 }
+
+.subject {
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.last-bottom {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 0 15px;
+    background-color: transparent;
+}
+
+.education {
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0;
+    font-size: 13px;
+}
+
+.educational-background {
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
 
 /* FEEDBACK */
 .feedback-container{
