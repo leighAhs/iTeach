@@ -475,6 +475,10 @@ footer .foot p {
     text-decoration: underline;
   }
 
+  .foot{
+    padding: 0;
+  }
+
 
 @media (max-width: 920px) {
     body {
@@ -701,5 +705,9 @@ footer .foot p {
     input[type="button"] {
         width: 45%;
         font-size: 14px;
+    }
+
+    .foot{
+        padding: 0 0;
     }
 }
