@@ -320,33 +320,117 @@ input[type="text"]:focus{
 }
 
 @media (max-width: 920px) {
-    header{
+    header {
         flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .logo-container,
+    .searchbar-container,
+    .navbar-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .main-content-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .profile-container,
+    .feedback-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .profile-top,
+    .top-profile-content,
+    .bot-profile-content {
+        width: 100%;
+    }
+
+    .profile-top {
+        height: auto;
     }
 }
 
+
 @media (max-width: 480px) {
-
-    header{
-        flex-wrap: wrap;
-    }
-
-    .main-content-container{
-        width: 100%;
-        height: auto;
+    .feedback-container {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 20px; 
+        padding: 20px 10px;
     }
 
-    .profile-container, .feedback-container{
+    .profile-info-content-container{
         height: auto;
-        width: 90%;
+        width: 100%;
+    }
+
+    .top-profile-content{
+        height: auto;
     }
 
     .profile-top{
-        height: auto;   
+        padding: 0 8px;
     }
 
-    .profile-top, .top-profile-content, .bot-profile-content{
-        width: auto;
+    .feedback-card {
+        width: 90%;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+
+    .feedback-card .stars {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .feedback-card img.profile-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    input{
+    width: 95%;
+    height: 35px;
+    }
+
+    .mess-icon{
+        height: auto;
+        width: 50px;
+    }
+
+    .feedback-card .name {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .floating-stars {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
