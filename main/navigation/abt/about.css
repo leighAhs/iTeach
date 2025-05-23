@@ -1,25 +1,142 @@
+div{
+    font-family: 'Segoe UI', Calibri, sans-serif;
+}
+
 .main-content-container{
-    font-size: large;
-    font-weight: bolder;
+    background-color: transparent;
 
     display: flex;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
 
+    padding: 0;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+}
+
+.card-container{
+    width: 90%;
+    height: 40%;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+}
+
+.about-card-container{
+    background-color: rgba(69, 68, 68, 0.3);
+    height: 200px;
+    width: 20%;
+    margin: 20px;
+    border-radius: 30px;
+
+    padding: 15px 10px;
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.card-image{
+    height: auto;
+    width: 50px;
+}
+
+.about-us-container{
+    background-color: rgba(69, 68, 68, 0.3);
+    height: auto;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 30px;
+
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.about-us-bottom-container{
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-img{
+    height: auto;
+    width: 30px;
+}
+
+.bottom-contact{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
 
     padding: 0 15px;
     box-sizing: border-box;
 }
 
-.content{
-    height: 20%;
-    background-color: transparent;
-    width: 100%;
-    border-radius: 20px;
+.text-email{
+    margin: 0 15    px;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.text-phone{
+    margin: 0 15px;
+}
+
+.text-fb{
+    margin: 0 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 965px) {
+    .card-container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .about-card-container {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .about-us-container {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+    .bottom-contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-email,
+    .text-phone,
+    .text-fb {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-image {
+        width: 40px;
+    }
+
+    .contact-img {
+        width: 25px;
+    }
+
+    .about-card-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .about-us-container {
+        padding: 10px 15px;
+    }
 }
