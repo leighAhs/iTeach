@@ -205,7 +205,7 @@ input[type="checkbox"]:after{
     font-family: "Font Awesome 5 Free";
     font-weight: bolder;
     font-size: 25px;
-    color: rgba(255, 255, 255, 0.692);;
+    color: rgba(255, 255, 255, 0.692);
     display: none;
 }
 

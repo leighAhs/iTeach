@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    // FOR PRICE RANGE BUTTON
-
+// FOR PRICE RANGE BUTTON
 var button = $(".button-container input");
 
 button.on("click", function () {
@@ -13,6 +12,17 @@ button.on("click", function () {
         $(this).css("background", "rgb(198, 198, 198)");
     }
 });
+
+
+$(".button").on("click", function () {
+    // Reset all buttons
+    $(".button").css("background-color", "rgba(69, 68, 68, 0.3)");
+
+    // Highlight the clicked one
+    $(this).css("background-color", "rgba(255, 255, 255, 0.692)");
+});
+
+
 
 // Function to load external HTML content into #main-content    
 function loadContent(page) {
