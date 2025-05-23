@@ -365,6 +365,10 @@ input[type="text"]:focus{
     .profile-top {
         height: auto;
     }
+
+    input{
+        height: 70px;
+    }
 }
 
 
@@ -383,11 +387,16 @@ input[type="text"]:focus{
     }
 
     .top-profile-content{
-        height: 50px;
+        height: 40px;
+    }
+
+    .profile-container{
+        height: auto;
     }
 
     .profile-top{
-        height: 100px;
+        flex-direction: column;
+        height: auto;
         padding: 0 8px;
     }
 

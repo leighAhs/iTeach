@@ -14,55 +14,6 @@ button.on("click", function () {
     }
 });
 
-// $(document).ready(function () {
-    
-//     function loadContent(page) {
-//         $("#main-content").load(page);
-        
-//     }
-
-//     $("#home-link").on("click", function (e) {
-//         e.preventDefault();
-        
-//         $("#main-content").load("main.html #main-content");
-
-//     });
-
-//     // Event handlers for each navbar link
-//     $("#about-link").on("click", function (e) {
-//         e.preventDefault(); 
-    
-//         // Load About page content
-//         loadContent("navigation/abt/about.html");
-    
-//         // Apply new styles to main-content-container
-//         $(".main-content-container").css({
-//             "background-color": "lightgray",
-//             "height": "auto", 
-//             "padding": "20px",
-//             "flex-direction": "row",
-//             "gap": "10px"
-//         });
-//     });
-    
-
-//     // $("#schedule-link").on("click", function (e) {
-//     //     e.preventDefault();
-
-//     //     loadContent("schedule.html"); 
-//     // });
-
-//     // $("#tutor-link").on("click", function (e) {
-//     //     e.preventDefault();
-//     //     loadContent("tutor.html");
-//     // });
-
-//     // $("#profile-link").on("click", function (e) {
-//     //     e.preventDefault();
-//     //     loadContent("profile.html");content
-//     // });
-// });
-
 // Function to load external HTML content into #main-content    
 function loadContent(page) {
     $("#main-content").load(page);
@@ -91,6 +42,23 @@ $("#about-link").on("click", function (e) {
     removeDynamicCSS();
     loadContent("main/navigation/abt/about.html");
     loadCSS("main/navigation/abt/about.css");
+});
+
+$("#tutor-link").on("click", function (e) {
+    e.preventDefault();
+
+    removeDynamicCSS();
+    loadContent("index.html .profile-info-container");
+});
+
+$("#profile-link").on("click", function (e) {
+    e.preventDefault();
+
+    $("#search").prop("disabled", true);
+
+    removeDynamicCSS();
+    loadContent("main/navigation/profile/profile.html");
+    loadCSS("main/navigation/profile/profile.css");
 });
 
 $(document).ready(function () {
