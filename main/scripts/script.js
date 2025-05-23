@@ -22,8 +22,6 @@ $(".button").on("click", function () {
     $(this).css("background-color", "rgba(255, 255, 255, 0.692)");
 });
 
-
-
 // Function to load external HTML content into #main-content    
 function loadContent(page) {
     $("#main-content").load(page);
