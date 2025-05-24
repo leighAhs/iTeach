@@ -52,6 +52,16 @@ $("#about-link").on("click", function (e) {
     loadCSS("main/navigation/abt/about.css");
 });
 
+//for schedule
+$("#schedule-link").on("click", function (e) {
+    e.preventDefault();
+
+    removeDynamicCSS();
+    loadContent("main/navigation/profile/profile.html .selection-content-container");
+    loadCSS("main/navigation/profile/profile.css");
+});
+
+// for tutor 
 $("#tutor-link").on("click", function (e) {
     e.preventDefault();
 
